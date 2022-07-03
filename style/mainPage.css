@@ -1,3 +1,9 @@
 div {
     border: 2px solid black;
 }
+
+code {
+    background-color: whitesmoke;
+    color: blue;
+    font-weight: bold;
+}

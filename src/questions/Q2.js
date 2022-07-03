@@ -1,5 +1,5 @@
 import Question from "./Question.js";
-class Q1 extends Question {
+class Q2 extends Question {
     constructor(C_target, A_target) {
         const title = "문제 2";
         const question_text = "문제 텍스트 2";
@@ -11,4 +11,4 @@ class Q1 extends Question {
         return target.call_next();
     }
 }
-export default Q1;
+export default Q2;

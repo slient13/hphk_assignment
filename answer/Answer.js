@@ -5,6 +5,7 @@ class Todo {
         this.startDate = startDate;
         this.endDate = endDate;
     }
+
     show() {
         let output = "";
         output += `title: ${this.title}<br/>`;
@@ -12,13 +13,21 @@ class Todo {
         output += `startDate: ${this.startDate}<br/>`;
         output += `endDate: ${this.endDate}<br/>`;
         output += `end`;
+
         return output;
     }
 }
-class CAnswer {
+
+class Answer {
     action() {
-        const todo = new Todo("화분 물주기", "작은 화분은 반컵, 큰 화분은 두컵씩", new Date("2022-07-04"), new Date("2022-07-04"));
+        const todo = new Todo(
+            "화분 물주기",
+            "작은 화분은 반컵, 큰 화분은 두컵씩",
+            new Date("2022-07-04"),
+            new Date("2022-07-04"),
+        )
         return todo.show();
     }
 }
-export default CAnswer;
+
+export default Answer;

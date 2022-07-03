@@ -1,5 +1,4 @@
 import Question from "../questions/Question";
-
 class QuestionPanel {
     q_number: number;
     question: Question;
