@@ -1,9 +1,26 @@
 div {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    border-color: black;
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none; */
+    padding: 5px 0px 5px 5px;
+}
+
+p {
+    margin-right: 5px;
 }
 
 code {
     background-color: whitesmoke;
     color: blue;
     font-weight: bold;
+}
+
+h2.element_head {
+    margin: 0px;
+    background-color: #ccc;
 }
