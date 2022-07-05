@@ -4,7 +4,7 @@ class Q1 extends Question {
     constructor(C_target: any, A_target: any) {
         const title: string = "문제 1";
         const question_text: string = 
-            `당신은 개에 대한 클래스를 만들어야 합니다. 주석 처리된 <code>Dog</code> 클래스를 이용해주세요.<br/>` +
+            `당신은 개에 대한 정보를 담은 <code>Dog</code> 클래스를 만드려고 합니다.<br/>` +
             `<code>Dog</code> 클래스에는 <code>name, sex</code> 2개의 속성이 포함되어야 합니다. ` +
             `두 속성은 생성자로부터 입력 받아 할당되어야 합니다.<br/>` +
             `<code>Dog</code> 클래스는 <code>cry, smiling</code> 2개의 메소드를 가져야 합니다. ` +

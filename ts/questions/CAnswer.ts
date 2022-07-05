@@ -19,7 +19,7 @@ class Dog extends Animal {
     }
 
     cry(): string {
-        return `${this.name}(이/가) "왈왈!" 하고 울었습니다.`;
+        return `${this.name}(이/가) "왈왈!"하고 짖었습니다.`;
     }
 
     smiling(): string {

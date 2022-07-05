@@ -1,4 +1,5 @@
 import QuestionPanel from "./src/view/QuestionPanel.js";
+import Footer from "./src/view/Footer.js";
 import Q1 from "./src/questions/Q1.js";
 import Q2 from "./src/questions/Q2.js";
 import Q3 from "./src/questions/Q3.js";
@@ -13,10 +14,20 @@ window.onload = () => {
 
     const cAnswer = new CAnswer();
     const answer = new Answer();
+    let q_list = [
+        new Q1(cAnswer, answer), 
+        new Q2(cAnswer, answer), 
+        new Q3(cAnswer, answer), 
+        new Q4(cAnswer, answer), 
+        new Q5(cAnswer, answer), 
+    ];
+    let check_list = [];
 
-    question_zone.innerHTML += new QuestionPanel(1, new Q1(cAnswer, answer)).render();
-    question_zone.innerHTML += new QuestionPanel(2, new Q2(cAnswer, answer)).render();
-    question_zone.innerHTML += new QuestionPanel(3, new Q3(cAnswer, answer)).render();
-    question_zone.innerHTML += new QuestionPanel(4, new Q4(cAnswer, answer)).render();
-    question_zone.innerHTML += new QuestionPanel(5, new Q5(cAnswer, answer)).render();
+    for (let i = 0; i < q_list.length; ++i) {
+        question_zone.innerHTML += new QuestionPanel(i+1, q_list[i]).render();
+        check_list.push(q_list[i].check());
+    }
+
+    let footer = document.getElementById("footer");
+    footer.innerHTML = new Footer(check_list).render();
 }
