@@ -5,7 +5,7 @@ import Q3 from "./src/questions/Q3.js";
 import Q4 from "./src/questions/Q4.js";
 import Q5 from "./src/questions/Q5.js";
 import CAnswer from "./src/questions/CAnswer.js";
-import Answer from "./answer/Answer.js";
+import Answer from "./src/answer/Answer.js"
 
 window.onload = () => {
     let question_zone = document.getElementById("question_zone");

@@ -15,11 +15,11 @@ class QuestionPanel {
                 `<p class="contents">${this.question.get_contents()}</p>` +
                 `<div class="answer">` +
                     `<div>` +
-                        `<h2 class="element_head">예상 출력</h2>` +
+                        `<h2 class="element_head">모범 출력</h2>` +
                         `<p class="correct_answer">${this.question.get_answer(true)}</p>` +
                     `</div>` + 
                     `<div>` + 
-                        `<h2 class="element_head">실제 출력</h2>` +
+                        `<h2 class="element_head">시험자 코드 출력</h2>` +
                         `<p class="user_answer">${this.question.get_answer(false)}</p>` +
                     `</div>` + 
                     `<div>` + 
